@@ -8,33 +8,31 @@ body {
   padding: 0;
 }
 
-h1 {
+h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
+}
+
+h1 {
   font-size: 22px;
 }
 
 h2 {
-  margin-top: 0;
   font-size: 20px;
 }
 
 h3 {
-  margin-top: 0;
   font-size: 18px;
 }
 
 h4 {
-  margin-top: 0;
   font-size: 16px;
 }
 
 h5 {
-  margin-top: 0;
   font-size: 14px;
 }
 
 h6 {
-  margin-top: 0;
   font-size: 12px;
 }
 
@@ -44,16 +42,6 @@ code {
 
 ul {
   padding-inline-start: 20px;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-body {
-  font-family: sans-serif;
-  margin: 20px;
-  padding: 0;
 }
 
 .square {
@@ -80,11 +68,115 @@ body {
 .status {
   margin-bottom: 10px;
 }
+
 .game {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
 .game-info {
   margin-left: 20px;
+}
+
+header {
+  padding: 20px;
+  position:absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  color: white;
+}
+
+header h1 {
+  margin: 0;
+  font-weight: bolder;
+  text-align: center;
+  font-size: 50px;  
+}
+
+.game-board {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 150px;
+}
+
+.board-row {
+  display: flex;
+}
+
+.square {
+  width: 150px;
+  height: 150px;
+  font-size: 40px;
+  margin: 2px;
+  display: flex;
+  color: #ffffff;
+  justify-content: center;
+  align-items: center;
+  background-color: #E7717D;
+  border: 3px solid #ccc;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.square:hover {
+  background-color: white;
+}
+
+.game-info {
+  margin-top: 20px;
+}
+
+.game-info ol {
+  list-style-type: none;
+  padding: 0;
+}
+
+.game-info ol li {
+  margin-bottom: 5px;
+}
+
+.game-info ol li button {
+  background-color: #E7717D;
+  color: rgb(255, 255, 255);
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.game-info ol li button:hover {
+  background-color: #c300ff;
+}
+
+.status {
+  font-size: 30px;
+  color: #ffffff; 
+  font-weight: bolder;
+}
+
+.game {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  background-color: #0C0032;
+}
+
+.game {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  background-color: #0C0032;
+  height: 100vh;
+}
+
+body {
+  margin: 0;
+  padding: 0;
 }
